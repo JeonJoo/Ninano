@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/IndexServlet1")
+@WebServlet("/IndexServlet")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,7 +32,7 @@ public class IndexServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		doGet(request, response);
+		response.getWriter().append("POST호출").append(request.getContextPath());
 	}
 
 }

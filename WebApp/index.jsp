@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,7 +29,7 @@
 <body>
 <%	
 	request.setCharacterEncoding("utf-8");	//이곳에서 한번만 선언(기존의 페이지에 있던 것들 삭제)
-	String inc = "/IndexServlet1";
+	String inc = "/IndexServlet";
 	if(request.getParameter("inc") != null){
 		inc = request.getParameter("inc");	//동적include는 결과를 가져옴
 	}
@@ -83,7 +82,7 @@
 							
 							<div class="btn-group">
 								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									â©
+									￦
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
@@ -96,11 +95,11 @@
 					<div class="col-md-8 clearfix">
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-user"></i> ë§ì´íì´ì§</a></li>
-								<li><a href=""><i class="fa fa-star"></i> ììë¦¬ì¤í¸</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> ì¥ë°êµ¬ë</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> ë¡ê·¸ì¸</a></li>
+								<li><a href=""><i class="fa fa-user"></i>마이페이지</a></li>
+								<li><a href=""><i class="fa fa-star"></i>위시리스트</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i>결제방법</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>장바구니</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i>로그인</a></li>
 							</ul>
 						</div>
 					</div>
@@ -363,7 +362,7 @@
 				
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Features Items</h2>
+						<h2 class="title text-center">오늘의 추천 상품</h2>
 						
 						<c:forEach items="${FLOWER_LIST}" var="vo">
 						<div class="col-sm-4">
