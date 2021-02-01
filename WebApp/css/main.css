@@ -144,6 +144,7 @@ a#scrollUp i {
 
 .header-middle .container .row .col-sm-4 {
     padding-left: 0;
+    position: relative;
 }
 
 .header-middle .container .row .col-sm-8 {

@@ -15,7 +15,7 @@ public class FlowerCraw {
 		Document doc;
 		try {
 			doc = Jsoup.connect(webURL).get();
-			Elements eles = doc.select("#goodsImgList > ul > li:nth-child(1)");
+			Elements eles = doc.select("#goodsImgList > ul > li");
 			for(Element li : eles) {
 				String product = li.selectFirst("a > div.goods_text > p").text();
 				String price = li.selectFirst("a > div.goods_text > div.price > p > span").text();
@@ -38,4 +38,10 @@ public class FlowerCraw {
 		}
 		return list;	
 	}
+	public static void main(String[] args) {
+	FlowerCraw cc = new FlowerCraw();
+	ArrayList<HashMap<String, String>> list = cc.getFlower("https://mall.epost.go.kr/display/viewMCategory.do?ctgryCd=112201000");
+//	System.out.println(list.size());
+//	System.out.println(list);
+}
 }

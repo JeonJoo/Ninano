@@ -10,10 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class IndexServlet
- */
-@WebServlet("/IndexServlet")
+
+@WebServlet("/IndexServlet1")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -25,7 +23,11 @@ public class IndexServlet extends HttpServlet {
 		// 꽃 사진 크롤링
 		FlowerCraw flr = new FlowerCraw();
 		ArrayList<HashMap<String, String>> list = flr.getFlower("https://mall.epost.go.kr/display/viewMCategory.do?ctgryCd=112201000");
+//		System.out.println(list.size());
+//		System.out.println(list);
+	
 		request.setAttribute("FLOWER_LIST", list);
+		request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
