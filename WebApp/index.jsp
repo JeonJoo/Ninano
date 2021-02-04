@@ -66,7 +66,7 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+							<a href="index.html"><img src="images/home/logo.png" alt="" width = "150" height = "50" /></a>
 						</div>
 						<div class="btn-group pull-right clearfix">
 							<div class="btn-group">
@@ -96,9 +96,9 @@
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i>마이페이지</a></li>
-								<li><a href=""><i class="fa fa-star"></i>위시리스트</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i>결제방법</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>장바구니</a></li>
+								<li><a href=""><i class="fa fa-star"></i>위시리스트</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i>고객센터</a></li>
 								<li><a href="login.html"><i class="fa fa-lock"></i>로그인</a></li>
 							</ul>
 						</div>
@@ -121,8 +121,8 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Home</a></li>
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+								<li><a href="index.html" class="active">홈</a></li>
+								<li class="dropdown"><a href="#">매장<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.html">Products</a></li>
 										<li><a href="product-details.html">Product Details</a></li> 
@@ -131,20 +131,20 @@
 										<li><a href="login.html">Login</a></li> 
                                     </ul>
                                 </li> 
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+								<li class="dropdown"><a href="#">상품<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">Blog List</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
                                 </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+								<li><a href="404.html">배달</a></li>
+								<li><a href="contact-us.html">이벤트</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
+							<input type="text" placeholder="검색"/>
 						</div>
 					</div>
 				</div>
@@ -373,14 +373,14 @@
 											<img src="${vo.key_img }" alt =""/>
 											<h2>${vo.key_price }</h2>
 											<p>${vo.key_product }</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>장바구니 담기</a>
 										</div>
 						
 										<div class="product-overlay">
 											<div class="overlay-content">
 												<h2>${vo.key_price }</h2>
 												<p>${vo.key_product }</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>장바구니 담기</a>
 											</div>
 											</div>
 										</div>
